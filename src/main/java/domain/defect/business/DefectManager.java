@@ -24,14 +24,14 @@ public class DefectManager {
     private DefectRepositoy defectRepositoy;
 
     @Autowired
-    private DefectCreationValidator defectCreationValidator;
+    private DefectValidator defectCreationValidator;
 
     public Defect createDefect(DefectCreationIn defectCreationIn) {
 
         /**
          * 결함 생성 검증
          */
-        DefectCreationValidator.verify(defectCreationIn);
+        DefectValidator.verifyCreation(defectCreationIn);
 
         /**
          * TODO 결함 생성 파라미터 정할 필요 있음...
