@@ -7,9 +7,9 @@ import org.thymeleaf.util.StringUtils;
 /**
  * 결함 인스턴스 생성 검증 클래스
  */
-public class DefectCreationValidator {
+public class DefectValidator {
 
-    public static void verify(DefectCreationIn defectCreationIn) {
+    public static void verifyCreation(DefectCreationIn defectCreationIn) {
 
         /**
          * 필수 입력 검증
@@ -27,7 +27,7 @@ public class DefectCreationValidator {
         _verifyDefectStatus(defectCreationIn);
 
         /**
-         * ...
+         * ...TODO ?
          */
 
     }
