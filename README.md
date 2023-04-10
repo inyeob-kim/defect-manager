@@ -11,7 +11,7 @@ Related Articles</br>
 Must rename your local master git branch!
 git branch -m master main
 
-[깃 사용 방법 (필독!!)]
+# 깃 사용 방법 (필독)
 1. git clone [remote address] -> 로컬에 복사(git remote -v 쳐보면 git clone때문에 remote 주소가 등록됨)
 2. git branch -m master main (master -> main 으로 rename)
 3. git pull origin main -> origin의 코드를 로컬 main 브랜치를 up-to-date 시킴
@@ -38,4 +38,8 @@ git branch -m master main
 * https://slack.com/ - for the group project
 
 <img width="886" alt="Screenshot 2023-04-11 at 12 48 45 AM" src="https://user-images.githubusercontent.com/60948817/230939078-5c78dac8-c036-4b12-ad98-4c766b581b20.png">
+
+# 파일 스트럭쳐
+<img width="428" alt="Screenshot 2023-04-11 at 1 19 19 AM" src="https://user-images.githubusercontent.com/60948817/230944596-2d58eb5a-c6e6-4fe4-9618-64d85a549942.png">
+
 
