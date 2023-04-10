@@ -2,7 +2,7 @@ package config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import repository.DefectRepositoy;
+import domain.repository.DefectRepositoy;
 import repository.JdbcDefectRepository;
 
 @Configuration

@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f82f6577-8d49-4f5c-8dd3-8d87ae59365e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/defect/model/DataDefect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/defect/model/LogicalDefect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/defect/dto/DefectCreationSrvcIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectCmmnUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectCmmnUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/dto/DefectCreationIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/dto/DefectCreationIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/model/Defect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/model/Defect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DefectRepositoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/repository/DefectRepositoy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JdbcDefectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/JdbcDefectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JpaDefectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/JpaDefectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/RegisterDefectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/defect/RegisterDefectService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681028186677</updated>
-      <workItem from="1681028187793" duration="13935000" />
+      <workItem from="1681028187793" duration="15518000" />
     </task>
     <servers />
   </component>

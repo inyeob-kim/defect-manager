@@ -16,11 +16,21 @@ public enum DefectTypeEnum {
         this.defectClass = defectClass;
     }
 
+
     public String getValue() {
         return this.type;
     }
 
     public String getDefectClass() {
         return this.defectClass;
+    }
+
+    public static String getDefectClassBasedOnType(String type) {
+        for (DefectTypeEnum c : values()) {
+            if (c.type.equals(type)) {
+                return c.getDefectClass();
+            }
+        }
+        return null;
     }
 }

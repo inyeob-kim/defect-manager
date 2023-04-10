@@ -2,10 +2,11 @@ package repository;
 
 import domain.defect.model.Defect;
 import domain.defect.business.dto.DefectQueryIn;
+import domain.repository.DefectRepositoy;
 
 import java.util.List;
 
-public class JpaDefectRepository implements DefectRepositoy{
+public class JpaDefectRepository implements DefectRepositoy {
     @Override
     public Defect selectById(String id) {
         return null;

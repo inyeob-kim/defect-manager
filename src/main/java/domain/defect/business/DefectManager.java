@@ -4,10 +4,9 @@ import domain.defect.business.enums.DefectTypeEnum;
 import domain.defect.model.Defect;
 import domain.defect.business.dto.DefectCreationIn;
 import domain.defect.business.dto.DefectQueryIn;
-import domain.member.model.Member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import repository.DefectRepositoy;
+import domain.repository.DefectRepositoy;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -32,7 +31,7 @@ public class DefectManager {
     @Autowired
     private DefectValidator defectCreationValidator;
 
-    public Defect createDefect(DefectCreationIn defectCreationIn) {
+    public Defect createDefect(DefectCreationIn defectCreationIn) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
         /**
          * 결함 생성 검증
@@ -43,14 +42,13 @@ public class DefectManager {
          * 결함 인스턴스 생성
          */
         // TODO
-
-        Class clazz = Class.forName(DefectTypeEnum.get);
+        Class clazz = Class.forName(DefectTypeEnum.getDefectClassBasedOnType(defectCreationIn.getType()));
         Defect defect = (Defect) clazz.getConstructor().newInstance();
 
         /**
-         * TODO
+         * TODO set defect properties...
          */
-        Defect defect = null;
+        defect = null;
 
         return defect;
     }

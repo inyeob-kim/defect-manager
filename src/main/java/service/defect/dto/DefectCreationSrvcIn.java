@@ -1,4 +1,4 @@
-package domain.defect.business.dto;
+package service.defect.dto;
 
 import domain.member.model.Member;
 import lombok.Getter;
@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class DefectCreationIn {
+public class DefectCreationSrvcIn {
 
     private String type;
     private String description;
