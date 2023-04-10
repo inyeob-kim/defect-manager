@@ -36,3 +36,6 @@ git branch -m master main
 * https://trello.com/en (Project Management Tool) -> Make sure to add your name and a due date when making a new card
 * https://docs.google.com/document/d/134MmpJO3CIvDpNYukts_IlSy3LWm9_-zJSPI-eJ_Myc/edit - Google Doc for the meeting minutes
 * https://slack.com/ - for the group project
+
+<img width="886" alt="Screenshot 2023-04-11 at 12 48 45 AM" src="https://user-images.githubusercontent.com/60948817/230939078-5c78dac8-c036-4b12-ad98-4c766b581b20.png">
+
