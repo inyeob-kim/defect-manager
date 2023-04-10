@@ -5,17 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f82f6577-8d49-4f5c-8dd3-8d87ae59365e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/defect/TestMemoryDefectRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/member/TestMemoryMemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/application/dto/DefectRegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/application/dto/MemberRegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/entity/Defect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/entity/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/errors/DefectNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/errors/MemberNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/repository/DefectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/infrastructure/persistence/JdbcDefectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/infrastructure/persistence/JpaDefectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/presentation/DefectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/presentation/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/repository/DefectRepositoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/repository/DefectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JdbcDefectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/defect/JdbcDefectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JpaDefectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/defect/JpaDefectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectCmmnUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/dto/DefectCreationIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/dto/DefectQueryIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectPriorityEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/enums/DefectPriorityEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectSeverityEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/enums/DefectSeverityEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/enums/DefectStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/domain/enums/DefectTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/exceptions/InvalidDefectCreationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/model/DataDefect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/model/Defect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/model/LogicalDefect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/member/business/MemberManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/member/business/MemberPositionEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/member/model/BusinessManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/member/model/Developer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/member/model/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/member/model/ProjectLeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/member/model/ProjectManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/repository/DefectRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/defect/JdbcDefectRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/defect/JpaDefectRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/defect/TestMemoryDefectRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/member/TestMemoryMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/defect/RegisterDefectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/defect/dto/DefectCreationSrvcIn.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +86,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/inyeobkim/Desktop/workspace/spring/defect-manager",
     "node.js.detected.package.eslint": "true",
@@ -87,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681028186677</updated>
-      <workItem from="1681028187793" duration="17191000" />
+      <workItem from="1681028187793" duration="22447000" />
     </task>
     <servers />
   </component>
