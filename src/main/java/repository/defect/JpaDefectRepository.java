@@ -1,14 +1,12 @@
-package repository;
+package repository.defect;
 
 import domain.defect.model.Defect;
 import domain.defect.business.dto.DefectQueryIn;
-import domain.repository.DefectRepositoy;
-import org.springframework.stereotype.Repository;
+import domain.repository.DefectRepository;
 
 import java.util.List;
 
-@Repository
-public class JdbcDefectRepository implements DefectRepositoy {
+public class JpaDefectRepository implements DefectRepository {
     @Override
     public Defect selectById(String id) {
         return null;

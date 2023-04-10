@@ -6,7 +6,7 @@ import domain.defect.business.dto.DefectCreationIn;
 import domain.defect.business.dto.DefectQueryIn;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import domain.repository.DefectRepositoy;
+import domain.repository.DefectRepository;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -26,7 +26,7 @@ public class DefectManager {
     private Map<String, Class<?>> cacheMap = new HashMap<>();
 
     @Autowired
-    private DefectRepositoy defectRepositoy;
+    private DefectRepository defectRepository;
 
     @Autowired
     private DefectValidator defectCreationValidator;
@@ -54,11 +54,8 @@ public class DefectManager {
     }
 
 
-    public Defect getDefect(String id) {
-        return defectRepositoy.selectById(id);
+    public Defect getDefect(Long id) {
+        return defectRepository.find(id);
     }
 
-    public List<Defect> getListDefect(DefectQueryIn defectQueryIn) {
-        return defectRepositoy.selectList(defectQueryIn);
-    }
 }

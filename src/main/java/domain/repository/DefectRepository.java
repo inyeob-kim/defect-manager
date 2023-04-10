@@ -12,8 +12,10 @@ import java.util.List;
  * 실제 구현체는 repository 패키지 안에 있음.
  */
 @Repository
-public interface DefectRepositoy {
-    public Defect selectById(String id);
+public interface DefectRepository {
+    public Defect find(Long id);
 
-    public List<Defect> selectList(DefectQueryIn defectQueryIn);
+    public Long save(Defect defect);
+
+
 }

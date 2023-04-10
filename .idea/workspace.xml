@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f82f6577-8d49-4f5c-8dd3-8d87ae59365e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/defect/model/LogicalDefect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/defect/dto/DefectCreationSrvcIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/defect/TestMemoryDefectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/member/TestMemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/hello.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectCmmnUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectCmmnUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/dto/DefectCreationIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/dto/DefectCreationIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DefectRepositoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/repository/DefectRepositoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JdbcDefectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/JdbcDefectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JpaDefectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/JpaDefectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/RegisterDefectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/defect/RegisterDefectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/repository/DefectRepositoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/repository/DefectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JdbcDefectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/defect/JdbcDefectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JpaDefectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/defect/JpaDefectRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -50,19 +50,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/inyeobkim/Desktop/workspace/spring/defect-manager&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/inyeobkim/Desktop/workspace/spring/defect-manager",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="domain.model.defect" />
@@ -85,11 +87,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681028186677</updated>
-      <workItem from="1681028187793" duration="15518000" />
+      <workItem from="1681028187793" duration="17191000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
