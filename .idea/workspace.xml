@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f82f6577-8d49-4f5c-8dd3-8d87ae59365e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectCreationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/enums/DefectTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/defect/model/DataDefect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/DefectValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/business/dto/DefectCreationIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/business/dto/DefectCreationIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/defect/model/Defect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/defect/model/Defect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +45,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/inyeobkim/Desktop/workspace/spring/defect-manager",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/inyeobkim/Desktop/workspace/spring/defect-manager&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="domain.model.defect" />
@@ -75,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681028186677</updated>
-      <workItem from="1681028187793" duration="10786000" />
+      <workItem from="1681028187793" duration="13935000" />
     </task>
     <servers />
   </component>

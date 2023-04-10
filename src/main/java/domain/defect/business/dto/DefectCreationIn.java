@@ -8,9 +8,12 @@ import lombok.Setter;
 @Setter
 public class DefectCreationIn {
 
-    private Member registrant;
-    private Member handler;
     private String title;
     private String description;
+    private String priority;
+    private String severity;
+    private String status;
+    private Member registrant;
+    private Member handler;
 
 }
