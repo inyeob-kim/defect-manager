@@ -32,14 +32,14 @@ git branch -m master main
 4. git branch -a (list all branches including local and remote tracking)
 5. git checkout -b <branch_name> (create a new branch of branch_name and switch to it)
 
-# 유용한 프로젝트 보조 툴
+# 유용한 개발 보조 툴
 * https://trello.com/en (Project Management Tool) -> Make sure to add your name and a due date when making a new card
 * https://docs.google.com/document/d/134MmpJO3CIvDpNYukts_IlSy3LWm9_-zJSPI-eJ_Myc/edit - Google Doc for the meeting minutes
 * https://slack.com/ - for the group project
 
 <img width="886" alt="Screenshot 2023-04-11 at 12 48 45 AM" src="https://user-images.githubusercontent.com/60948817/230939078-5c78dac8-c036-4b12-ad98-4c766b581b20.png">
 
-# 파일 스트럭쳐
+# 계층형 구조 파일 스트럭쳐
 <img width="428" alt="Screenshot 2023-04-11 at 1 19 19 AM" src="https://user-images.githubusercontent.com/60948817/230944596-2d58eb5a-c6e6-4fe4-9618-64d85a549942.png">
 
 
