@@ -1,5 +1,6 @@
 package domain.defect.business;
 
+import domain.defect.business.enums.DefectTypeEnum;
 import domain.defect.model.Defect;
 import domain.defect.business.dto.DefectCreationIn;
 import domain.defect.business.dto.DefectQueryIn;
@@ -8,7 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import repository.DefectRepositoy;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -19,6 +23,8 @@ import java.util.List;
  */
 @Component
 public class DefectManager {
+
+    private Map<String, Class<?>> cacheMap = new HashMap<>();
 
     @Autowired
     private DefectRepositoy defectRepositoy;
@@ -34,17 +40,21 @@ public class DefectManager {
         DefectValidator.verifyCreation(defectCreationIn);
 
         /**
-         * TODO 결함 생성 파라미터 정할 필요 있음...
+         * 결함 인스턴스 생성
          */
-        Member registrant = defectCreationIn.getRegistrant();
-        Member handler = defectCreationIn.getHandler();
-        String title = defectCreationIn.getTitle();
-        String description = defectCreationIn.getDescription();
+        // TODO
 
+        Class clazz = Class.forName(DefectTypeEnum.get);
+        Defect defect = (Defect) clazz.getConstructor().newInstance();
+
+        /**
+         * TODO
+         */
         Defect defect = null;
 
         return defect;
     }
+
 
     public Defect getDefect(String id) {
         return defectRepositoy.selectById(id);

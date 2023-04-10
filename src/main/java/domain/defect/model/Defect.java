@@ -18,14 +18,16 @@ import lombok.Setter;
 //CR변경요청사항("CR (변경요청사항)");
 @Getter
 @Setter
-public class Defect {
+public abstract class Defect {
 
-    private Long id;
-    private Member registrant;
-    private Member handler;
-    private String title;
-    private String description;
-    private String status;
+    protected Long id;
+    protected String title;
+    protected String description;
+    protected String priority;
+    protected String severity;
+    protected String status;
+    protected Member registrant;
+    protected Member handler;
 
 
     protected Defect(Member registrant, Member handler, String title, String description) {
