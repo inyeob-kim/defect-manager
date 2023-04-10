@@ -11,13 +11,19 @@ Related Articles</br>
 Must rename your local master git branch!
 git branch -m master main
 
-[How to use git (MUST READ)]
+[깃 사용 방법 (필독!!)]
 1. git clone [remote address] -> 로컬에 복사(git remote -v 쳐보면 git clone때문에 remote 주소가 등록됨)
 2. git branch -m master main (master -> main 으로 rename)
 3. git pull origin main -> origin의 코드를 로컬 main 브랜치를 up-to-date 시킴
 4. git checkout -b inyeobkim-dev -> 새로운 브랜치에서 작업은 필수! (브랜치 명명은 이름 + dev)
-5. git push orign inyeobkim-dev -> inyeobkim-dev 브랜치를 remote origin 으로 푸쉬! (main 브랜치로 작업 브랜치를 merge 하지말고 작업 브랜치를 바로 push 해주세요)
-6. 협업자들끼리 확인한 뒤 다같이 merge 할 예정
+5. 작업 진행
+6. git status
+7. git add .
+8. git commit -m "수정된 사항 메시지 작성"
+9. git push orign inyeobkim-dev -> inyeobkim-dev 브랜치를 remote origin 으로 푸쉬! (main 브랜치로 작업 브랜치를 merge 하지말고 작업 브랜치를 바로 push 해주세요)
+10. git branch -D inyeobkim-dev -> 작업 브랜치 삭제
+
+협업자들끼리 확인한 뒤 다같이 merge 할 예정
 
 그 외 명령어
 1. git branch -d <branch_name> --> deleting local branch
