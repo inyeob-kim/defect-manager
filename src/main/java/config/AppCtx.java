@@ -2,14 +2,14 @@ package config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import domain.repository.DefectRepositoy;
-import repository.JdbcDefectRepository;
+import domain.repository.DefectRepository;
+import repository.defect.JdbcDefectRepository;
 
 @Configuration
 public class AppCtx {
 
     @Bean
-    public DefectRepositoy defectRepositoy() {
+    public DefectRepository defectRepositoy() {
         return new JdbcDefectRepository();
     }
 }
