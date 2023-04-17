@@ -1,4 +1,9 @@
 package com.example.defectmanager.domain.repository;
 
-public interface MemberRepository {
+import com.example.defectmanager.domain.entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MemberRepository extends JpaRepository<Member, Long> {
+
+
 }
