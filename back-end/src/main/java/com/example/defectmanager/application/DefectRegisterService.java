@@ -15,6 +15,6 @@ public class DefectRegisterService {
 
     @Transactional
     public Long save(DefectRegisterRequestDto requestDto) {
-        return this.defectRepository.save(requestDto.toEntity()).getId();
+        return null;
     }
 }

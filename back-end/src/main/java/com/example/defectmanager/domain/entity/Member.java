@@ -1,29 +1,52 @@
 package com.example.defectmanager.domain.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(
+        name = "tbl_member",
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "email_unique",
+                        columnNames = "email "
+                )
+        }
+)
 @Entity
 public class Member {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 3
+    @SequenceGenerator(
+            name = "member_sequence",
+            sequenceName = "member_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "member_sequence"
+    ) // 3
     private Long id;
 
     private String firstName;
 
     private String lastName;
 
-    private String memberType;
+    @Column(
+            name = "email",
+            nullable = false
+    )
+    private String email;
 
-    private Long teamId;
-
-    public List<Defect> getListDefect() {
-        return null;
-    }
+    private String type;
 
 }
 

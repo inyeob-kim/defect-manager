@@ -2,18 +2,29 @@ package com.example.defectmanager.domain.entity;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-@Table(name = "defects")
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor // 5
+@Table(name = "tbl_defect")
 @Entity // 1
 public class Defect {
 
     @Id // 2
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 3
+    @SequenceGenerator(
+            name = "defect_sequence",
+            sequenceName = "defect_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "defect_sequence"
+    ) // 3
     private Long id;
 
     @Column(length = 500, nullable = false) // 4
@@ -34,23 +45,15 @@ public class Defect {
     @Column(length = 1, nullable = false)
     private String severity;
 
-    @Column(nullable = false)
-    private Long defectRegistrantId;
+    @ManyToOne(
+            cascade = CascadeType.ALL
+    )
+    @JoinColumn(
+            name = "",
+            referencedColumnName = ""
+    )
+    private Member member;
 
-    @Column(nullable = false)
-    private Long defectHandlerId;
-
-    @Builder // 7
-    public Defect(String title, String content, String type, String status, String priority, String severity, Long defectRegistrantId, Long defectHandlerId) {
-        this.title = title;
-        this.content = content;
-        this.type = type;
-        this.status = status;
-        this.priority = priority;
-        this.severity = severity;
-        this.defectRegistrantId = defectRegistrantId;
-        this.defectHandlerId = defectHandlerId;
-    }
 }
 
 /**

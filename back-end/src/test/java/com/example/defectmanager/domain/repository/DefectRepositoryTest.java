@@ -1,6 +1,7 @@
 package com.example.defectmanager.domain.repository;
 
 import com.example.defectmanager.domain.entity.Defect;
+import com.example.defectmanager.domain.entity.Member;
 import lombok.RequiredArgsConstructor;
 import org.junit.After;
 import org.junit.Test;
@@ -21,50 +22,34 @@ public class DefectRepositoryTest {
     @Autowired
     DefectRepository defectRepository;
 
-    @After
-    public void cleanUp() {
-        defectRepository.deleteAll();
-    }
+//    @After
+//    public void cleanUp() {
+//        defectRepository.deleteAll();
+//    }
 
     @Test
-    public void getDefect() {
+    public void saveDefect() {
 
-        // given
-        String title = "test defect";
-        String content = "test defect content...";
-        String type = "1";
-        String status = "1";
-        String priority = "1";
-        String severity = "2";
-        Long defectRegistrantId = 000001L;
-        Long defectHandlerId = 000002L;
+        Member member = Member.builder()
+                .firstName("Inyeob")
+                .lastName("Kim")
+                .email("inyeob4078@gmail.com")
+                .type("1")
+                .build();
 
-        defectRepository.save(Defect.builder()
-                .title(title)
-                .content(content)
-                .type(type)
-                .status(status)
-                .priority(priority)
-                .severity(severity)
-                .defectRegistrantId(defectRegistrantId)
-                .defectHandlerId(defectHandlerId)
-                .build());
+        Defect defect = Defect.builder()
+                .member(member)
+                .title("Error testing title")
+                .content("There is something wrong with this *** service....")
+                .status("1")
+                .severity("3")
+                .priority("1")
+                .type("1")
+                .build();
 
-        // when
-        List<Defect> defectList = defectRepository.findAll();
+        defectRepository.save(defect);
 
-        // then
-        Defect defect = defectList.get(0);
-        assertThat(defect.getTitle().equals(title));
-        assertThat(defect.getContent().equals(content));
-        assertThat(defect.getType().equals(type));
-        assertThat(defect.getStatus().equals(status));
-        assertThat(defect.getPriority().equals(priority));
-        assertThat(defect.getSeverity().equals(severity));
-        assertThat(defect.getDefectRegistrantId().equals(defectRegistrantId));
-        assertThat(defect.getDefectHandlerId().equals(defectHandlerId));
-
-
+        System.out.println("defect = " + defect);
     }
 
 }
