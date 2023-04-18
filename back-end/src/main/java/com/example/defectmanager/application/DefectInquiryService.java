@@ -56,11 +56,7 @@ public class DefectInquiryService {
             throw new MemberNotFoundException("Member not found by id of " + defectHandlerId);
         }
 
-        Member defectHandler = optionalMember.get();
-
-        List<Defect> defectList = defectHandler.getListDefect();
-
-        return defectList;
+        return null;
     }
 
 }
