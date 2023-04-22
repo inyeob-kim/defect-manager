@@ -42,4 +42,8 @@ git branch -m master main
 # 계층형 구조 파일 스트럭쳐
 <img width="428" alt="Screenshot 2023-04-11 at 1 19 19 AM" src="https://user-images.githubusercontent.com/60948817/230944596-2d58eb5a-c6e6-4fe4-9618-64d85a549942.png">
 
+# 대시보드 스크린샷
+![Screenshot 2023-04-23 at 8 38 00 AM](https://user-images.githubusercontent.com/60948817/233811971-281f4af6-4238-4a99-a152-c0a17cd68d01.png)
+![Screenshot 2023-04-23 at 8 38 21 AM](https://user-images.githubusercontent.com/60948817/233811975-56a183ea-1e41-4e80-963f-9fe0d1d16160.png)
+
 
