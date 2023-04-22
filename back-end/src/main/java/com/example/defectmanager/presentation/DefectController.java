@@ -65,9 +65,6 @@ public class DefectController {
     }
 
     private ResponseEntity<Defect> _getResponseEntity(Defect defect) {
-
-//        HttpHeaders httpHeader = new HttpHeaders();
-//        httpHeader.setContentType(new MediaType("application", "json", Charset.forName("UTF-8")));
         return new ResponseEntity<>(defect, new HttpHeaders(), HttpStatus.OK);
     }
 
