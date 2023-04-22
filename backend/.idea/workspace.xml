@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f82f6577-8d49-4f5c-8dd3-8d87ae59365e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3bfde6fa-b81f-41ed-b4d1-28b315efc74b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3bfde6fa-b81f-41ed-b4d1-28b315efc74b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/presentation/DefectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/defectmanager/presentation/DefectController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +212,7 @@
       <updated>1681028186677</updated>
       <workItem from="1681028187793" duration="22447000" />
       <workItem from="1681303163727" duration="15680000" />
+      <workItem from="1682168184501" duration="10000" />
     </task>
     <servers />
   </component>
