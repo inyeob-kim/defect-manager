@@ -55,8 +55,8 @@ const Contacts = () => {
   return (
     <Box m="20px">
       <Header
-        title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
+        title="주소록"
+        subtitle="프로젝트 멤버 주소록"
       />
       <Box
         m="40px 0 0 0"

@@ -14,30 +14,30 @@ const Team = () => {
     { field: "id", headerName: "ID" },
     {
       field: "name",
-      headerName: "Name",
+      headerName: "이름",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
       field: "age",
-      headerName: "Age",
+      headerName: "나이",
       type: "number",
       headerAlign: "left",
       align: "left",
     },
     {
       field: "phone",
-      headerName: "Phone Number",
+      headerName: "전화번호",
       flex: 1,
     },
     {
       field: "email",
-      headerName: "Email",
+      headerName: "이메일",
       flex: 1,
     },
     {
       field: "accessLevel",
-      headerName: "Access Level",
+      headerName: "포지션",
       flex: 1,
       renderCell: ({ row: { access } }) => {
         return (
@@ -70,7 +70,7 @@ const Team = () => {
 
   return (
     <Box m="20px">
-      <Header title="TEAM" subtitle="Managing the Team Members" />
+      <Header title="팀 관리" subtitle="팀 멤버 목록" />
       <Box
         m="40px 0 0 0"
         height="75vh"
